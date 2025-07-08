@@ -8,7 +8,7 @@ This tool enables multi-region crawling of transaction and listing data for seco
 1. Modify the user configuration area:
    - Replace `cookies` with your own account cookies after logging into the platform
      (F12 → "Application" → "Cookies")
-   - Change `REGIONS` to target regions
+   - Change `REGIONS/region` to target regions
    - Keep other settings unchanged
 
 ## Example Configuration
@@ -31,3 +31,13 @@ REGIONS = [
     "xinchangxian",
     "zhujishi"
 ]
+```
+# Notes:
+1. Data Preprocessing:
+   - After crawling, simple data preprocessing is required using Excel
+
+2. Cookies Instructions:
+   - The current cookies can bypass some anti-scraping mechanisms  
+   - **But please note:**
+     - With large data volumes, the platform may still detect scraping activity
+     - You may need to wait for account unblocking or use new cookies
